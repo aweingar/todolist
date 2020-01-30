@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Todos from './Todos';
 import AddTodo from './AddTodo'
 
-class App extends Component() {
+class App extends Component {
   state = {
     todos: [
       {id: 1, content: 'buy some milk'},
@@ -27,9 +27,9 @@ class App extends Component() {
   render(){
     return (
       <div className="todo-app container">
-      <h1 className="center blue-text">Todos</h1>
-      <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
-      <AddTodo addTodo={this.addTodo}/>
+        <h1 className="center blue-text">Todos</h1>
+        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+        <AddTodo addTodo={this.addTodo}/>
       </div>
   )
 }
